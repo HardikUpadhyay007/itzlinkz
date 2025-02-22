@@ -35,7 +35,6 @@ export function CustomizationPanel({
     setTheme,
 }: CustomizationPanelProps) {
     const handleColorChange = (backgroundColor: string) => {
-        // Automatically set text color based on background brightness
         const r = parseInt(backgroundColor.slice(1, 3), 16);
         const g = parseInt(backgroundColor.slice(3, 5), 16);
         const b = parseInt(backgroundColor.slice(5, 7), 16);

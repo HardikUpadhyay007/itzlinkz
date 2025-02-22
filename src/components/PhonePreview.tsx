@@ -57,9 +57,7 @@ export function PhonePreview({ profile, theme }: PhonePreviewProps) {
 
     return (
         <div className="w-[300px] h-[600px] rounded-[3rem] border-8 border-black relative overflow-hidden shadow-xl">
-            {/* Phone Notch */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-black rounded-b-xl z-10"></div>
-            {/* Content */}
             <div
                 className="h-full overflow-y-auto p-6"
                 style={{
