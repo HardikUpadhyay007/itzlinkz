@@ -13,10 +13,13 @@ app.use(bodyParser.json());
 app.use("/api/profiles", profileRoutes);
 
 mongoose
-    .connect("mongodb://localhost:27017/yourlinkz", {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
+    .connect(
+        "mongodb+srv://hardikkupadhyay123:hardik123@cluster0.0zxjb.mongodb.net/itzlinkz?retryWrites=true&w=majority&appName=Cluster0/",
+        {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        }
+    )
     .then(() => {
         console.log("Connected to MongoDB");
         app.listen(PORT, () => {
